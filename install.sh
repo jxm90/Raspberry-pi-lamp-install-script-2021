@@ -42,4 +42,6 @@ done
 sed -i "s/username/$user/g" *.sql
 sed -i "s/password/$password/g" *.sql
 echo "Please enter the root mariadb password you chose during setup"
+sudo mysql -u root -p < test.sql
+
 
