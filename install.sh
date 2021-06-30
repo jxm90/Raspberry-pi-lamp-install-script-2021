@@ -30,7 +30,7 @@ sudo chown -R pi:www-data /var/www/html/
 sudo chmod -R 770 /var/www/html/
 
 #Create phpmyadmin user with all options
-#read -p "Username: " username
+#read -p "Username: " user
 #while true; do
 #    read -p "Password: " password
 #    echo
@@ -39,5 +39,4 @@ sudo chmod -R 770 /var/www/html/
 #    [ "$password" = "$password2" ] && break
 #    echo "Please try again"
 #done
-#sudo mysql -u root -p -e "CREATE USER '$username'@'%' IDENTIFIED BY '$password';"
-#sudo mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO '$username'@'%' WITH GRANT OPTION;"
+sed -i 's/username/$username/g' *.sql
