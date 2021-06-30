@@ -30,13 +30,13 @@ sudo chown -R pi:www-data /var/www/html/
 sudo chmod -R 770 /var/www/html/
 
 #Create phpmyadmin user with all options
-#read -p "Username: " user
-#while true; do
-#    read -p "Password: " password
-#    echo
-#    read -p "Password (again): " password2
-#    echo
-#    [ "$password" = "$password2" ] && break
-#    echo "Please try again"
-#done
+read -p "Username: " user
+while true; do
+    read -p "Password: " password
+    echo
+    read -p "Password (again): " password2
+    echo
+    [ "$password" = "$password2" ] && break
+    echo "Please try again"
+done
 sed -i 's/username/$username/g' *.sql
