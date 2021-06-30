@@ -35,7 +35,7 @@ read -p "Username: " user
 while true; do
     read -p "Password: " password
     echo
-    read -p "Password (again): " password2
+    read -p "Verify Password: " password2
     echo
     [ "$password" = "$password2" ] && break
     echo "Please try again"
