@@ -40,3 +40,4 @@ while true; do
     echo "Please try again"
 done
 sed -i 's/username/$username/g' *.sql
+sed -i 's/password/$password/g' *.sql
