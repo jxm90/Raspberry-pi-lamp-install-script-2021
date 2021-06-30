@@ -39,5 +39,7 @@ while true; do
     [ "$password" = "$password2" ] && break
     echo "Please try again"
 done
-sed -i 's/username/$username/g' *.sql
-sed -i 's/password/$password/g' *.sql
+sed -i "s/username/$user/g" *.sql
+sed -i "s/password/$password/g" *.sql
+echo "Please enter the root mariadb password you chose during setup"
+
