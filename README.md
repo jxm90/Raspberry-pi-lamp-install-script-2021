@@ -3,7 +3,7 @@ Automate the setting up LAMP on raspian 10
 
 
 How to use.
-
+sudo apt install git
 git clone 
 
 This script will install apache2, mariadb, php, and phpmyadmin.
