@@ -39,10 +39,10 @@ while true; do
     [ "$password" = "$password2" ] && break
     echo "Please try again"
 done
-sed -i "s/username/$user/g" *.sql
-sed -i "s/password/$password/g" *.sql
+sed -i "s/username/$user/g" phpadmin-user.sql
+sed -i "s/password/$password/g" phpadmin-user.sql
 echo "Please enter the root mariadb password you chose during setup"
-sudo mysql -u root -p < test.sql
+sudo mysql -u root -p < phpadmin-user.sql
 echo "You can now log in to phpmyadmin at http://raspberrypi-IP/phpmyadmin"
 
 
