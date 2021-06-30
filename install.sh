@@ -30,6 +30,7 @@ sudo chown -R pi:www-data /var/www/html/
 sudo chmod -R 770 /var/www/html/
 
 #Create phpmyadmin user with all options
+echo "We will create a non-root sql user that has full access permissions, this will be used to log into phpmyadmin"
 read -p "Username: " user
 while true; do
     read -p "Password: " password
