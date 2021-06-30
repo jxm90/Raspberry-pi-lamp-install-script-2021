@@ -29,7 +29,7 @@ sudo service apache2 restart
 sudo chown -R pi:www-data /var/www/html/
 sudo chmod -R 770 /var/www/html/
 
-#Create phpmyadmin user with all options
+#Create non-root sql user forphpmyadmin with all permissions
 echo "We will create a non-root sql user that has full access permissions, this will be used to log into phpmyadmin"
 read -p "Username: " user
 while true; do
