@@ -17,7 +17,7 @@ sudo apt install php openssl php-common php-curl php-json php-mbstring php-mysql
 
 
 #MySQL 
-sudo apt install mariadb-server php-mysql -y
+sudo apt install mariadb-server -y
 sudo mysql_secure_installation
 
 #PhpMyAdmin
