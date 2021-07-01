@@ -8,4 +8,5 @@ How to use.<br>
 <code>cd Raspberry-pi-lamp-install-script-2021</code><br>
 <code>sh install.sh</code><br><br>
 This script will install apache2, mariadb, php, and phpmyadmin.
-Once this script is the complete your root web directory is /var/www/
+Once this script is the complete your root web directory is /var/www/html
+don't forget to remove the default index.html file
