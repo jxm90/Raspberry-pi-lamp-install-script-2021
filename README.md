@@ -1,5 +1,5 @@
 # Raspberry-pi-lamp-install-script-2021
-Automate the setting up LAMP on raspian 10
+Automate the setting up of LAMP on raspian 10
 
 
 How to use.<br>
